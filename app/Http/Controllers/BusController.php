@@ -44,7 +44,7 @@ class BusController extends Controller
             if ($num>0) {
 
            $data= '<table class="table jambo_table">
-                 <thead style="z-index:46;background:cyan;">
+                 <thead style="z-index:46;background:#575325;color:white;">
                    <th>Sno</th>
                    <th>Bus Number</th>
                    <th>From</th>
@@ -56,7 +56,7 @@ class BusController extends Controller
                    <th>Yatayat Category</th>
                    <th>Fare</th>
                  </thead>
-                 <tbody style="background:silver;">';
+                 <tbody style="background:#e8e7dc;">';
                      if(isset($buses) && !empty($buses))
                      {
                          foreach($buses as $key=>$bus)

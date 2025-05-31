@@ -11,7 +11,7 @@
 @section('content')
    <div class="container">
        <div class="row">
-           <div class="col-sm-12" style="background:lemonchiffon;z-index:45;height:900px;width:100%;margin-top:80px;background-size:cover;border-radius:25px;">
+           <div class="col-sm-12" style="background:#f5f4f2;z-index:45;height:900px;width:100%;margin-top:80px;background-size:cover;border-radius:25px;">
                 
            <div style="margin-top:60px;margin-left:400px;font-size:40px;">
                Reservation Information
@@ -78,7 +78,7 @@
                               </div>
                           </div>
                       </div>
-                     <button class="btn btn-danger" style="font-size:40px;margin-left:400px;border-radius:30px;" type="submit" style="border-radius:10px;">
+                     <button class="btn" style="margin-left:400px;" id="btn_1" type="submit">
                        Confirm Booking
                      </button> 
                   </form>

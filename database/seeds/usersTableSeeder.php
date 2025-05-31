@@ -16,15 +16,15 @@ class usersTableSeeder extends Seeder
         $data=[
             array(
                 'name'=>'Basant Raj Joshi',
-                'email'=>'admin123@gmail.com',
+                'email'=>'admin@gmail.com',
                 'password'=>Hash::make('admin123'),
                 'role'=>'admin',
                 'gender'=>'male'
             ),
             array(
-                'name'=>' vivek vindra',
-                'email'=>'motivation@gmail.com',
-                'password'=>Hash::make('motivation123'),
+                'name'=>'User',
+                'email'=>'user@gmail.com',
+                'password'=>Hash::make('user1234'),
                  'role'=>'passenger',
                 'gender'=>'male'
             )

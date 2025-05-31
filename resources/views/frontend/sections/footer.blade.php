@@ -1,10 +1,7 @@
-
-	<div id="footer" class="noprint" style="background:lawngreen !important; width:100%;margin-left:0px;position:absolute;top:1000px;">
-                <p>Hours of Operation&nbsp;&nbsp;&bull;&nbsp;&nbsp;Mon - Sun: 10:00 am - 12:00 am</p>
-                
+<footer class="footer">
+     <p>Hours of Operation&nbsp;&nbsp;&bull;&nbsp;&nbsp;Mon - Fri: 10:00 am - 12:00 am</p>
                 <p>&copy; Copyright {{date('Y')}} Mahakali Yatayat Bus <br /></p>
-       </div>
-</div>
+  </footer>
 <script>
         var config = {
             // replace the publicKey with yours

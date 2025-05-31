@@ -3,7 +3,7 @@
 	<div id="header" class="noprint">
         <div class="row">
                 <div  class="col-sm-5">
-                    <h2 style="color:lawngreen !important;">Book Bus Tickets</h2>
+                    <p class="header-text"><img src = "{{ asset('assets/frontend/images/logo.png') }}" width ="150px" height="70px"></img>Ticket Reservation System</p>
                 </div>
                 <div id="mainnav" class="col-sm-7">
                         <ul>

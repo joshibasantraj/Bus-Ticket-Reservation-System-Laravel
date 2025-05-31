@@ -6,7 +6,7 @@
              <form class="form">
                     <div class="form-group row">
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-1" style="color:tomato;font-size:20px;">From</div>
+                        <div class="col-sm-1" id="main_text">From</div>
                         <div class="col-sm-4">
                             <select name="from" id="from" class="form-control" required>
                                 <option value="">--select--</option>
@@ -17,7 +17,7 @@
                                 <option value="Dipayal">Dipayal</option>
                             </select>
                         </div>
-                        <div class="col-sm-1" style="color:tomato;font-size:20px;">To</div>
+                        <div class="col-sm-1" id="main_text">To</div>
                         <div class="col-sm-4">
                             <select name="to" id="to" class="form-control" required>
                                 <option value="">--select--</option>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-3"></div>
-                        <div class="col-sm-1" style="color:tomato;font-size:20px;">Date</div>
+                        <div class="col-sm-1" id="main_text">Date</div>
                         <div class="col-sm-4">
                             <input type="date" name="date" id="date" class="form-control" required=true>
                         </div>
@@ -42,7 +42,8 @@
                     <div class="form-group row">
                         <div class="col-sm-6"></div>
                         <div class="col-sm-2">
-                            <button class="btn btn-danger" style="font-size:20px;" id="btn1" onclick="fetchRecord()" type="button">Search</button>
+                            <button class="btn" id="btn_1" onclick="fetchRecord()" type="button">
+                                <i class="fas fa-solid fa-magnifying-glass"></i>Search</button>
                         </div>
                         <div class="col-sm-4"></div>
                     </div>
@@ -62,7 +63,7 @@
                    @csrf
                     <div class="form-group row">
                         <div class="col-sm-3"></div>
-                        <div class="col-sm-1" style="color:tomato;font-size:20px;">Bus Number</div>
+                        <div class="col-sm-1" id="main_text">Bus Number</div>
                         <div class="col-sm-4">
                             <input type="text" placeholder="please enter bus number from table ..." name="number" id="bus_num" class="form-control" required>
                         </div>
@@ -71,7 +72,7 @@
                     <div class="form-group row">
                         <div class="col-sm-6"></div>
                         <div class="col-sm-2">
-                            <button class="btn btn-danger" style="font-size:20px;" type="submit">Submit</button>
+                            <button class="btn" id="btn_1" type="submit">Submit</button>
                         </div>
                         <div class="col-sm-4"></div>
                     </div>

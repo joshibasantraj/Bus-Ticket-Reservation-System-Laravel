@@ -20,11 +20,10 @@
 @section('content')
   <div class="container">
       <div class="row">
-          <div class="col-sm-12" style="background:silver;margin-top:100px;width:70%;height:700px;border-radius:20px;margin-left:200px;">
-            <h1 style="font-size:50px;color:green;">Contact Us</h1>
+          <div class="col-sm-12" id="card">
     <form action="{{ route('contact-save') }}" enctype="multipart/form-data" method="post">
     @csrf
-          <table style="z-index:50;margin-left:50px;margin-top:50px; line-height: 40px;">
+          <table style="z-index:50;margin-left:50px;margin-top:50px;">
                   <tr>
                       <td class="title">Name</td>
                       @for($i=0;$i<10;$i++)
@@ -62,7 +61,7 @@
                       <td>&nbsp;</td>
                   </tr>
                   <tr>
-                      <td class="title">Subject</td>
+                      <td class="title">Comments</td>
                       @for($i=0;$i<10;$i++)
                          <td>&nbsp;&nbsp;&nbsp;</td>
                       @endfor
@@ -79,7 +78,7 @@
                          <td>&nbsp;&nbsp;&nbsp;</td>
                       @endfor
                       <td>
-                          <button class="btn btn-success" type="submit" style="font-size:40px;">Send Us</button>
+                          <button class="btn" id="btn_1" type="submit" style="font-size:30px;">Send Us</button>
                       </td>
                   </tr>
                   

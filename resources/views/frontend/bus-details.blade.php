@@ -25,7 +25,7 @@
 			{
 				height:20px;
 				width:5px;
-				background-color: brown !important;
+				background-color: #585c2c !important;
 				border:solid black 1px;
 				text-align:center;
 			}
@@ -47,7 +47,7 @@
                 @csrf
                 <div class="form-group row" style="z-index:50;margin-top:80px;margin-bottom:0px;">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-2" style="color:tomato;font-size:20px;">Total Seats</div>
+                    <div class="col-sm-2" id="main_text">Total Seats</div>
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-4">  
@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group row" style="z-index:50;margin-top:10px;margin-bottom:0px;">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-2" style="color:tomato;font-size:20px;">Remaining Seats</div>
+                    <div class="col-sm-2" id="main_text">Remaining Seats</div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
                       <span style="font-size:30px;">{{ 44-$bus->ticketDetails->count() }}</span>
@@ -64,17 +64,17 @@
                 </div>
                 <div class="form-group row" style="z-index:50;margin-top:10px;margin-bottom:0px;">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-4" style="color:tomato;font-size:20px;">Number of Seats To Be Booked</div>
+                    <div class="col-sm-4" id="main_text">Number of Seats To Be Booked</div>
                     <div class="col-sm-4">
                     <input type="number" name="seat_no" min="1" max="{{ 44-$bus->ticketDetails->count() }}" id="seat_no" value="0" class="form-control" required=true>
                     </div>
                     
                 </div>
-                    <table border="solid black 1px"  cellspacing="0px" style="background-color:blueviolet !important;margin-top:10px;margin-left:100px;">
-                        <thead style="background-color:blue;">
-                        <th style="width:300px;height:30px;">Cabin</th>
-                        <th style="width:800px;height:30px;">Normal seats</th>
-                        <th style="width:100px;height:30px;">Back Seats</th>
+                    <table border="solid black 1px"  cellspacing="0px" id="seat">
+                        <thead>
+                        <th style="width:300px;height:30px;color:white;">Cabin</th>
+                        <th style="width:800px;height:30px;color:white;">Normal seats</th>
+                        <th style="width:100px;height:30px;color:white;">Back Seats</th>
                         </thead>
                         <tbody>
                                 <tr>
@@ -180,7 +180,7 @@
                     </table>
                 <div class="form-group row" style="z-index:50;margin-top:10px;margin-bottom:0px;">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-2" style="color:tomato;font-size:20px;">Seats Selected</div>
+                    <div class="col-sm-2" id="main_text">Seats Selected</div>
                     <div class="col-sm-7">
                     <input type="hidden" name="seats_selected" style="height:70px;" id="seats_selected" class="form-control" required=true>
                     </div>
@@ -190,7 +190,7 @@
                 <div class="form-group row" style="margin-top:20px;">
                         <div class="col-sm-6"></div>
                             <div class="col-sm-2">
-                                <button class="btn btn-danger" style="font-size:30px;" id="btn1" type="submit">Submit</button>
+                                <button class="btn" id="btn_1" type="submit">Submit</button>
                             </div>
                         <div class="col-sm-4"></div>
                     </div>
@@ -242,7 +242,7 @@
    @if(isset($bus->ticketDetails))
      @foreach($bus->ticketDetails as $ticketDetail)
           document.getElementById("{{ $ticketDetail->seat_no }}").disabled=true;
-	      document.getElementById("{{ $ticketDetail->seat_no }}").style.backgroundColor="red";
+	      document.getElementById("{{ $ticketDetail->seat_no }}").style.backgroundColor="#4d0303";
      @endforeach
    @endif
    

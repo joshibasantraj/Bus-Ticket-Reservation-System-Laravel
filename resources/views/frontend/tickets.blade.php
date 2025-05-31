@@ -29,8 +29,8 @@
 @section('content')
    <div class="container">
        <div class="row">
-           <div class="col-sm-12"  style="z-index:45;margin-left:500px;height:40px;width:20%;margin-top:70px;">
-                  <input type="button" class="printbutton" onclick="window.print()" style="font-size:40px;border-radius:20px;" value="Print Tickets">
+           <div class="col-sm-12"  style="z-index:45;margin-left:500px;height:40px;width:20%;margin-top:80px;">
+                  <input type="button" class="printbutton" onclick="window.print()" style="font-size:20px;" value="Print Tickets">
            </div>
        </div>
        <div class="row">

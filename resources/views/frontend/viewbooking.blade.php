@@ -10,10 +10,10 @@
 @endsection
 @section('content')
    <div class="container">
-       <div class="row" style="margin-top:80px;z-index:45;background:silver;height:900px;border-radius:20px;">
-           <div class="col-sm-12">
+       <div class="row">
+           <div class="col-sm-12" id="card">
                <table class="table jambo_table" style="margin-top:40px;z-index:55;">
-                   <thead>
+                   <thead id="main_text">
                        <th>Sno</th>
                        <th>Reservation Id</th>
                        <th>Yatayat</th>
